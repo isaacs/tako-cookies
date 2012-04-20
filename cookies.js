@@ -3,7 +3,9 @@ var Cookies = require("cookies")
 , tako = require("tako")
 , EE = require("events").EventEmitter
 
-var cookieMiddle = tako.globalMiddles.cookies = cookieMiddle = new EE()
+var cookieMiddle = module.exports = new EE()
+tako.globalMiddles.cookies = tako.globalMiddles.cookies || cookieMiddle
+
 cookieMiddle.on("request", function (req, res) {
   req.cookies = res.cookies = new Cookies(req, res, keygrip)
 })
