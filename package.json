@@ -1,0 +1,20 @@
+{
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "name": "tako-cookies",
+  "description": "A cookie middleware for tako",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/isaacs/tako-cookies.git"
+  },
+  "main": "cookies.js",
+  "peerDependencies": {
+    "tako": "~0.2.5"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "cookies": "~0.2.2",
+    "keygrip": "~0.2.0"
+  }
+}
